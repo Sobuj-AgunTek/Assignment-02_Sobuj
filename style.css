@@ -2,6 +2,8 @@ body {
     font-family: "Inter", sans-serif;
 }
 
+/* ---------------------------- HEADER SECTION */
+
 .header-subscribe {
     width: 135px;
     height: 44px;
@@ -33,7 +35,7 @@ body {
     height: 20px;
 }
 
-/* ------------------ HERO SECTION ------------------ */
+/* ---------------------------- HERO SECTION */
 .hero {
     max-width: 1600px;
     margin: 0 auto;
@@ -160,3 +162,229 @@ body {
 .hero-subscribe-btn:hover {
     background: rgba(0, 255, 136, 0.1);
 }
+
+/* ---------------------------- PODCAST SECTION */
+.podcast-overview {
+    width: 1600px;
+    height: 646px;
+    background-color: #1A0B2E;
+    margin: 0 auto;
+    padding: 50px 50px 60px 50px;
+    box-sizing: border-box;
+    color: white;
+    font-family: "Inter", sans-serif;
+    text-align: center;
+}
+
+.container {
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.podcast-title {
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 2rem;
+}
+
+.podcast-description {
+    font-size: 1rem;
+    line-height: 1.8rem;
+    margin-bottom: 2rem;
+}
+
+.podcast-line {
+    width: 1200px;
+    height: 1px;
+    background-color: #ffffff;
+    opacity: 0.1; 
+    border: none;
+    margin: 80px auto;
+}
+
+.podcast-stats {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 40px;
+    text-align: center;
+    margin-top: 120px;
+}
+
+.podcast-stats .stat h2 {
+    font-size: 3rem; 
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+    color: #00FF88;
+}
+
+.podcast-stats .stat p {
+    font-size: 1rem;
+    margin: 0;
+    color: #ffffff;
+}
+
+/* ------------------------------ GRID SECTION */
+.main-container {
+  width: 1600px;
+  background-color: #230E3D;
+  margin: 0 auto;
+  padding: 80px 120px;
+  box-sizing: border-box;
+}
+
+.main-container h1 {
+  font-size: 48px;
+  font-weight: bold;
+  color: white;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-auto-rows: auto; 
+  gap: 20px;
+}
+
+.grid-item {
+  background-color: #351165;
+  padding: 30px;
+  border-radius: 10px;
+  color: white;
+  box-sizing: border-box;
+}
+
+.grid-item img {
+  width: 60px;
+  margin-bottom: 15px;
+}
+
+.grid-item h3 {
+  margin-bottom: 10px;
+  font-size: 1.4rem;
+  font-weight: bold;
+}
+
+.grid-item p {
+  line-height: 24px;
+  font-size: 1rem;
+}
+
+.box-1 {
+  grid-row: span 2;
+}
+
+/* ---------------------------------- FEATURES SECTION STYLING START ------------------------------ */
+.container {
+    max-width: 1600px;
+    margin: 0 auto;
+    background-color: #1A0B2E;
+    padding: 40px;
+    box-sizing: border-box;
+    color: #fff;
+}
+
+h2 {
+    text-align: center;
+    font-size: 36px;
+    font-weight: 700;
+    margin: 60px 0 40px;
+}
+
+.episodes {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 80px;
+}
+
+.episode-card {
+    background-color: #1E0F3E;
+    border-radius: 15px;
+    overflow: hidden;
+    width: 380px;
+}
+
+.episode-card iframe {
+    width: 380px;
+    height: 214px;
+    border: none;
+}
+
+.episode-content {
+    padding: 20px;
+}
+
+.episode-content h3 {
+    margin: 0 0 10px;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.episode-content p {
+    font-size: 16px;
+    color: #ccc;
+    margin-bottom: 15px;
+}
+
+.episode-duration {
+    font-size: 14px;
+    color: #00FF55;
+    font-weight: 600;
+    position: relative;
+    padding-left: 20px;
+}
+
+.episode-duration::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 16px;
+    height: 16px;
+    background-image: url(./assets/clock.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.host {
+    background-color: #1E0F3E;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    padding: 30px 40px;
+    gap: 30px;
+}
+
+.host img {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.host-info h3 {
+    margin: 0 0 10px;
+    font-size: 24px;
+}
+
+.host-info p {
+    font-size: 16px;
+    color: #ccc;
+    line-height: 1.5;
+    margin-bottom: 15px;
+}
+
+.social-icons a {
+    margin-right: 15px;
+    color: #fff;
+    font-size: 18px;
+    text-decoration: none;
+}
+
+.social-icons a:hover {
+    color: #FF00FF;
+}
+/* ---------------- FEATURES SECTION STYLING END ----------------- */
