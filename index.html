@@ -1,24 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TechWave Navbar</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap"
+    rel="stylesheet"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <div class="navbar">
-            <img src="./assets/TechWave.png" alt="TechWave Logo" class="logo">
-            <div class="nav-menu">
-                <ul>
-                    <li><a href="index.html">About</a></li>
-                    <li><a href="index.html">Episodes</a></li>
-                    <li><a href="index.html">Host</a></li>
+    <!---------HEADER DESIGN START--------->
+<header>
+    <div class="max-w-[1600px] mx-auto bg-[#1a0b2e]">
+        <div class="flex items-center justify-between py-4 pl-[200px] pr-[200px]">
+
+            <img src="./assets/TechWave.png" alt="TechWave Logo"
+                class="header-logo w-[219px] h-[32px] object-contain" />
+
+            <nav>
+                <ul class="menu-list flex space-x-8">
+                    <li><a href="index.html" class="text-white hover:text-purple-300 transition">About</a></li>
+                    <li><a href="index.html" class="text-white hover:text-purple-300 transition">Episodes</a></li>
+                    <li><a href="index.html" class="text-white hover:text-purple-300 transition">Host</a></li>
                 </ul>
+            </nav>
+
+            <div class="header-subscribe">
+                Subscribe
+                <img src="./assets/ArrowRight.png" alt="Right Arrow" class="arrow-icon">
             </div>
-            <div class="nav-btn">Subscribe</div>
+
         </div>
-    </header>
+    </div>
+</header>
+    <!---------HEADER DESIGN END--------->
+
+    <!---------HERO DESIGN START--------->
+<main>
+    <div class="hero">
+        <img src="./assets/hero-bg.png" alt="Hero Background" class="hero-bg">
+
+        <div class="circle">
+            <img src="./assets/microphone.png" class="mic-icon" alt="Microphone">
+            <div class="new-tag">NEW</div>
+        </div>
+
+        <div class="hero-content">
+            <h1 class="hero-title">TechWave</h1>
+            <p class="hero-subtitle">
+                Your daily dose of tech insights, productivity hacks, and personal growth
+            </p>
+
+            <div class="hero-buttons">
+                <button class="spotify-btn">
+                    <i class="fa-brands fa-spotify"></i>
+                    Listen on Spotify
+                </button>
+
+                <button class="hero-subscribe-btn">
+                    <i class="fa-solid fa-envelope"></i>
+                    Subscribe
+                </button>
+            </div>
+        </div>
+    </div>
+</main>
+    <!---------HERO DESIGN END--------->
+
 </body>
 </html>

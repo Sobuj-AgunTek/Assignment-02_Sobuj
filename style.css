@@ -1,4 +1,162 @@
-*{
-    margin: 0;
-    padding: 0;
+body {
+    font-family: "Inter", sans-serif;
+}
+
+.header-subscribe {
+    width: 135px;
+    height: 44px;
+
+    background: linear-gradient(45deg, 
+        rgba(247, 233, 63, 1) 0%, 
+        rgba(251, 9, 180, 1) 51%, 
+        rgba(145, 0, 248, 1) 100%
+    );
+
+    color: white;
+    font-size: 1rem;
+    font-weight: 600;
+    padding: 0 12px;
+    border-radius: 1000px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 6px;
+
+    transition: 0.3s ease;
+}
+.header-subscribe:hover {
+    opacity: 0.85;
+}
+.arrow-icon {
+    width: 20px;
+    height: 20px;
+}
+
+/* ------------------ HERO SECTION ------------------ */
+.hero {
+    max-width: 1600px;
+    margin: 0 auto;
+    position: relative;  
+}
+
+.hero-bg {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+}
+
+.circle {
+    width: 350px;
+    height: 350px;
+    border-radius: 50%;
+
+    background: linear-gradient(45deg,
+        rgba(247, 233, 63, 1) 0%,
+        rgba(251, 9, 180, 1) 51%,
+        rgba(145, 0, 248, 1) 100%
+    );
+
+    border: 10px solid #2A186C;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.mic-icon {
+    width: 120px;
+    height: auto;
+    object-fit: contain;
+    z-index: 2;
+}
+
+.new-tag {
+    position: absolute;
+    top: 0;
+    left: 72%;
+    background: #00FF88;
+    color: #000;
+    font-size: 18px;
+    font-weight: 600;
+    padding: 6px 14px;
+    border-radius: 30px;
+    box-shadow: 0px 4px 10px rgba(0, 255, 136, 0.5);
+    z-index: 3;
+}
+
+.hero-content {
+    position: absolute;
+    top: 520px; 
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    width: 100%;
+    max-width: 800px;
+}
+
+.hero-title {
+    font-size: 60px;
+    font-weight: 800;
+    color: white;
+    margin-bottom: 15px;
+}
+
+.hero-subtitle {
+    font-size: 16px;
+    font-weight: 400;
+    color: #eaeaea;
+    margin-bottom: 25px;
+}
+
+.hero-buttons {
+    display: flex;
+    justify-content: center;
+}
+
+.spotify-btn {
+    font-size: 16px;
+    font-weight: 600;
+    padding: 12px 25px;
+    border-radius: 1000px;
+    cursor: pointer;
+    border: none;
+    color: white;
+
+    background: linear-gradient(45deg,
+        rgba(247, 233, 63, 1) 0%,
+        rgba(251, 9, 180, 1) 51%,
+        rgba(145, 0, 248, 1) 100%
+    );
+
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    transition: 0.3s ease;
+}
+.spotify-btn:hover {
+    opacity: 0.85;
+}
+
+.hero-subscribe-btn {
+    font-size: 16px;
+    font-weight: 600;
+    padding: 12px 25px;
+    border-radius: 1000px;
+    cursor: pointer;
+    background: transparent;
+    border: 2px solid #00FF88;
+    color: #00FF88;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    margin-left: 15px;
+    transition: 0.3s ease;
+}
+.hero-subscribe-btn:hover {
+    background: rgba(0, 255, 136, 0.1);
 }
