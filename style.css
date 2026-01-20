@@ -289,7 +289,7 @@ h2 {
     text-align: center;
     font-size: 36px;
     font-weight: 700;
-    margin: 60px 0 40px;
+    margin: -60px 0 40px;
 }
 
 .episodes {
@@ -376,15 +376,66 @@ h2 {
     line-height: 1.5;
     margin-bottom: 15px;
 }
-
-.social-icons a {
-    margin-right: 15px;
-    color: #fff;
-    font-size: 18px;
-    text-decoration: none;
-}
-
-.social-icons a:hover {
-    color: #FF00FF;
-}
 /* ---------------- FEATURES SECTION STYLING END ----------------- */
+
+/* ---------------------------- FOOTER SECTION */
+.footer {
+    width: 1600px;
+    max-width: 100%;
+    height: 412px;
+    margin: 0 auto;
+    position: relative;
+    text-align: center;
+    color: #fff;
+    font-family: 'Inter', sans-serif;
+}
+
+.footer-bg {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 1;
+}
+
+.footer-logo {
+    position: relative;
+    width: 410px;
+    top: 120px;
+    margin: 0 auto;
+    z-index: 2;
+}
+
+.footer-links {
+    list-style: none;
+    padding: 0;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    z-index: 2;
+    position: relative;
+    top: 152px;
+}
+
+.footer-links li a {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.footer-copy {
+    display: block;
+    font-size: 14px;
+    position: relative;
+    z-index: 2;
+    top: 184px;
+    color: #fafafa;
+}
