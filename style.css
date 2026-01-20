@@ -285,11 +285,11 @@ body {
     color: #fff;
 }
 
-h2 {
+.f-h2{
     text-align: center;
     font-size: 36px;
     font-weight: 700;
-    margin: -60px 0 40px;
+    margin: 60px 0 40px;
 }
 
 .episodes {
@@ -349,33 +349,60 @@ h2 {
     background-repeat: no-repeat;
 }
 
+/* HOST SECTION */
 .host {
-    background-color: #1E0F3E;
-    border-radius: 20px;
+    width: 1600px;          /* background পুরো max-width */
+    max-width: 100%;
+    background-color: #1A0B2E; /* চাইলে background color বা image */
+    padding: 60px 0;        /* vertical spacing */
     display: flex;
-    align-items: center;
-    padding: 30px 40px;
-    gap: 30px;
+    justify-content: center; /* content center horizontally */
 }
 
+/* CONTENT CONTAINER (1200px) */
+.host-info-wrapper {
+    max-width: 1200px;      /* main content width */
+    width: 100%;
+    display: flex;
+    align-items: flex-start; /* top aligned */
+    gap: 40px;               /* image-text spacing */
+}
+
+/* HOST IMAGE */
 .host img {
-    width: 180px;
-    height: 180px;
-    border-radius: 50%;
-    object-fit: cover;
+    width: 300px;
+    height: auto;
+    border-radius: 10px;     /* চাইলে rounded corners */
+    flex-shrink: 0;          /* image small না হবে */
+}
+
+/* HOST INFO */
+.host-info {
+    color: #fff;
 }
 
 .host-info h3 {
-    margin: 0 0 10px;
-    font-size: 24px;
+    font-size: 28px;
+    margin-bottom: 15px;
 }
 
 .host-info p {
     font-size: 16px;
-    color: #ccc;
-    line-height: 1.5;
-    margin-bottom: 15px;
+    line-height: 1.6;
+    margin-bottom: 20px;
 }
+
+/* SOCIAL ICONS */
+.social-icons {
+    display: flex;
+    gap: 15px;
+}
+
+.social-icons img {
+    width: 32px;
+    height: 32px;
+}
+
 /* ---------------- FEATURES SECTION STYLING END ----------------- */
 
 /* ---------------------------- FOOTER SECTION */
